@@ -1,5 +1,6 @@
 import Header from "./Components/Header"
 import Code from "./Components/MyComponents"
+import MEditor from "./Components/MEditor"
 
 function App() {
  
@@ -8,6 +9,7 @@ function App() {
     <>
     <Header/>
     <Code/>
+    <MEditor/>
     </>
   )
 }

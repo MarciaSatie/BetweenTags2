@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@codemirror-toolkit/react": "^0.6.0",
+    "@monaco-editor/react": "^4.6.0",
     "@types/codemirror": "^5.60.15",
     "@uiw/codemirror-theme-vscode": "^4.21.24",
     "@uiw/react-codemirror": "^4.21.24",

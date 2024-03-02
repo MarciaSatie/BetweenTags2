@@ -2,7 +2,7 @@ import CodeMirror from "@uiw/react-codemirror";
 import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 
 function Code() {
-  const code = "console.log('Code Mirror!');"
+  const code = "console.log('Code Mirror!');console.log('Bye')"
   return (
     <CodeMirror
       value={code}
