@@ -4,7 +4,7 @@ import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/ext-language_tools";
 
 function AEditor(props:any) {
-  const code = "var message = 'Monaco Editor!' \nconsole.log(message);";
+ 
   return (
     <AceEditor
       height="100px"
