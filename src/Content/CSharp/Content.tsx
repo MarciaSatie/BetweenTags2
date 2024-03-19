@@ -8,8 +8,7 @@ const content: any =[];
 
 content.push(
   Card1,
-  Card1,
-  Card1 
+
 );
 
 

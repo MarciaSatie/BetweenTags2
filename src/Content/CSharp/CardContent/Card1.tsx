@@ -1,5 +1,5 @@
 
-const cardTitle ="teisting card1";
+const cardTitle ="testing card1";
 const cardDate = createDate("2024-03-12");
 const cardContent = CardContent();
 
@@ -13,7 +13,7 @@ function CardContent() {
 const NewCard = new Map();
 NewCard.set ("title",cardTitle);
 NewCard.set ("date", cardDate);
-NewCard.set ("content",cardContent);
+NewCard.set ("cardContent",cardContent);
 NewCard.set ("key",GenerateKey())
 
 const cardObj = convertMapToObj(NewCard);
@@ -38,10 +38,10 @@ function createDate(dateImput:string){
     return day+" "+month+" "+year;
 }
 
-function convertMapToObj(map:any){
-    const obj ={};
-    for (let [key, value] of map.entries()){
-        obj [key]=value;
-    }
-    return obj;
+function convertMapToObj(map: Map<string, any>): { [key: string]: any } {
+  const obj: { [key: string]: any } = {};
+  for (let [index, value] of map.entries()) {
+      obj[index] = value;
+  }
+  return obj;
 }
