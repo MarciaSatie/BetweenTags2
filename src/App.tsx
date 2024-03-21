@@ -15,16 +15,17 @@ function App() {
   return (
     <>
     <Header/>
+    
     <AEditor
       code ={`Welcome to <Between-Tags!/>
 
 Where I create notes from specifics code languages.
 Enjoy! `}
     />
+
    <CardGroupSearch contentList ={listAll}/>
 
     <CardsGroup
-      
       title ={"C# Cards"}
       contentList ={contentCSharp}
     />
