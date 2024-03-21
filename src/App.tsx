@@ -1,8 +1,6 @@
 import Header from "./Components/Header"
-import Code from "./Components/Editor/MyComponents"
-import MEditor from "./Components/Editor/MEditor"
-import AEditor from "./Components/Editor/AEditor"
 import CardsGroup from "./Components/Cards/CardsGroup"
+import CardGroupSearch from "./Components/Cards/CardGroupSearch/CardsGroupSearch";
 
 import contentCSharp from "./Content/CSharp/Content"
 
@@ -11,13 +9,13 @@ import contentCSharp from "./Content/CSharp/Content"
 
 function App() {
   
+  let listAll = [...contentCSharp];
 
   return (
     <>
     <Header/>
-    <Code/>
-    <MEditor/>
-    <AEditor/>
+   <CardGroupSearch contentList ={listAll}/>
+
     <CardsGroup
  
       title ={"C# Cards"}

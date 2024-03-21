@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 
 
 
+
 export default function CardSingleStructure(props:any) {
 
 const [isOpen,setIsOpen] = useState(false);
