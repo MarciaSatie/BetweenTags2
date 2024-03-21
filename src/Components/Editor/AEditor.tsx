@@ -4,12 +4,14 @@ import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/ext-language_tools";
 
 function AEditor(props:any) {
+
+  const propToString = String(props.code);
  
   return (
     <AceEditor
       height="100px"
       width="100%"
-      value={props.code}
+      value={propToString}
       mode="javascript"
       theme="monokai"
       fontSize="16px"

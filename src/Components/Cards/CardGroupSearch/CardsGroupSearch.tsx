@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SearchBar from"./SearchBar"
 import { useState,useEffect } from "react"
 
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -33,6 +34,7 @@ useEffect (()=>{
 
   return (
     <>
+
         <SearchBar callback={childCallback}/>
         <div className= "relative z-0 shadow-lg p-4 mt-4 mb-4 rounded-3xl overflow-auto max-h-[350px] text-left ">
         <Swiper

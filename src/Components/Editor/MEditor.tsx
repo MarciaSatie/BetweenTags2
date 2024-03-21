@@ -1,12 +1,12 @@
 import Editor from "@monaco-editor/react";
-function MEditor() {
-    const code = "var message = 'Monaco Editor!' \nconsole.log(message);";
+function MEditor(props:any) {
+
     return (
       <Editor
         height="100px"
         language="javascript"
         theme="vs-dark"
-        value={code}
+        value={props.code}
         options={{
           inlineSuggest: true,
           fontSize: "16px",
