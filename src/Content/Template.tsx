@@ -1,8 +1,8 @@
 
-import AEditor from './../../../Components/Editor/AEditor'
+import AEditor from './../Components/Editor/AEditor'
 
 
-//Replce XXX by file name.
+//Replce XXX by file name.s
 
 const cardTitle ="XXX";
 const cardDate = createDate("2024-03-22");

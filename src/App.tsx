@@ -1,7 +1,6 @@
 import Header from "./Components/Header"
 import CardsGroup from "./Components/Cards/CardsGroup"
 import CardGroupSearch from "./Components/Cards/CardGroupSearch/CardsGroupSearch";
-import AEditor from "./Components/Editor/AEditor";
 
 import contentCSharp from "./Content/CSharp/Content"
 import contentVSCode from "./Content/VisualCode/Content"
