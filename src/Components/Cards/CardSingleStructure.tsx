@@ -18,26 +18,30 @@ const [isOpen,setIsOpen] = useState(false);
         
             <h2 className=' text-bt-p text-2xl font-header mt-4'>{props.title}</h2>
             <div className='mt-4 font-semibold'>
-                <h5>{props.cardDate}</h5>
+                <p>{props.cardDate}</p>
             </div>
-            <div className='mt-4'>
+            <div className='mt-3'>
                 {props.text}
             </div>
           </div>
       </Modal>
 
 
-      <div className='z-0 border-4 rounded-lg p-4 overflow-auto z-0'>
+      <div className='z-0 border-4 rounded-lg p-4 overflow-auto'>
           <div onClick={()=> setIsOpen(true)}>
             {props.logo}
             <h2 className=' text-bt-p text-2xl font-header mt-4'>{props.title}</h2>
-            <div className='mt-4 font-semibold'>
+          </div>
+
+        {/* //Date */}
+          <div className='mt-4 font-semibold text-xs'>
                 <h5>{props.cardDate}</h5>
             </div>
-            <div className='mt-4'>
+            
+          {/* //Content */}
+          <div className='mt-4'>
                 {props.text}
             </div>
-          </div>
       </div>
     </div>
     </>

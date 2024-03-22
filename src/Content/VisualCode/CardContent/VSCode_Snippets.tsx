@@ -2,17 +2,28 @@
 import AEditor from '../../../Components/Editor/AEditor'
 
 
-const cardTitle ="testing card1";
-const cardDate = createDate("2024-03-12");
+
+const cardTitle ="VS Code Snippets";
+const cardDate = createDate("2024-03-22");
 const cardContent = CardContent();
 
 function CardContent() {
   return (
     <>
-    <AEditor
-      code ={'hi mama'}
-    />
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a ligula mattis, viverra tortor tincidunt, blandit magna. In commodo semper diam nec efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent rhoncus sapien sem, non ornare mi efficitur vel. Duis vel lacinia lectus. Fusce pretium est in metus scelerisque, eget porttitor turpis bibendum. Vestibulum sed maximus arcu. Ut non tristique justo. Pellentesque sodales id tortor sit amet dictum. Integer varius nisi sed nisi imperdiet, et euismod enim condimentum. Mauris libero tortor, hendrerit in eleifend eget, rutrum ut velit. Proin semper purus in dolor feugiat, et auctor est convallis. Phasellus condimentum at elit in ullamcorper. Integer interdum mauris nec urna mattis ullamcorper. Etiam aliquam placerat nisl in pharetra.</div>
+    <details>
+      <summary className='text-sm'>
+        <p><strong>HTML Format</strong></p>
+      </summary>
+      <p>shift+l</p>
+    </details>
+
+    <details>
+      <summary className='text-sm'>
+        <p><strong>React Component Snippets</strong></p>
+      </summary>
+      <p>rfc (enter)</p>
+    </details>
+   
     </>
     
   )

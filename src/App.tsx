@@ -4,13 +4,15 @@ import CardGroupSearch from "./Components/Cards/CardGroupSearch/CardsGroupSearch
 import AEditor from "./Components/Editor/AEditor";
 
 import contentCSharp from "./Content/CSharp/Content"
+import contentVSCode from "./Content/VisualCode/Content"
+import contentReact from "./Content/React/Content"
 
 
 
 
 function App() {
   
-  let listAll = [...contentCSharp];
+  let listAll = [...contentCSharp,...contentVSCode,...contentReact];
 
   return (
     <>
@@ -30,6 +32,15 @@ Enjoy! `}
       contentList ={contentCSharp}
     />
     
+    <CardsGroup
+      title ={"React"}
+      contentList ={contentReact}
+    />
+
+    <CardsGroup
+      title ={"VS Code"}
+      contentList ={contentVSCode}
+    />
     </>
   )
 }
