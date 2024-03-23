@@ -4,18 +4,44 @@ import AEditor from './../../../Components/Editor/AEditor'
 
 //Replce XXX by file name.
 
-const cardTitle ="XXX";
+const cardTitle ="npm create vite@latest";
 const cardDate = createDate("2024-03-22");
 const cardContent = CardContent();
 
 function CardContent() {
   return (
-    <>
-    <AEditor
-      code ={`Add code here`}
-    />
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a ligula mattis, viverra tortor tincidunt, blandit magna. In commodo semper diam nec efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent rhoncus sapien sem, non ornare mi efficitur vel. Duis vel lacinia lectus. Fusce pretium est in metus scelerisque, eget porttitor turpis bibendum. Vestibulum sed maximus arcu. Ut non tristique justo. Pellentesque sodales id tortor sit amet dictum. Integer varius nisi sed nisi imperdiet, et euismod enim condimentum. Mauris libero tortor, hendrerit in eleifend eget, rutrum ut velit. Proin semper purus in dolor feugiat, et auctor est convallis. Phasellus condimentum at elit in ullamcorper. Integer interdum mauris nec urna mattis ullamcorper. Etiam aliquam placerat nisl in pharetra.</div>
-    </>
+  <>
+    <details>
+      <summary className='font-bold'>
+        Install Node.js and Vite
+      </summary>
+      <a href='https://nodejs.org/en/downloa'>Node.js</a>
+    </details>
+    <br />
+    <details>
+      <summary className='font-bold text-pink-700 '> npm create vite@latest </summary>
+      <ol>
+        <li><p>In terminal type the code npm create vite@latest and press Enter </p></li>
+        <br />
+        <p><b>Answer the Questions:</b></p>
+        <li><b>create-vite@5.2.3. Ok to proceed? </b>(Type y)</li>
+        <li><b>? Project name:</b> (Ths will create a new folder with the project inside, if you don't want to create the folder, type ".") </li>
+        <li><b>? Package name:</b> (Feel free to choose any name, usually is used the project name)</li>
+        <li><b>Select a framework:</b> (React, using arrow's keywords)</li>
+        <li><b>Select a variant:</b> (Choose the code langague to work on, +SWF install the package faster)</li>
+        <li>Type <b>npm install</b>.</li>
+        <li>Type <b>npm run dev</b>.</li>
+        <p>Done 😜 </p>
+      </ol>
+    </details>
+    <br />
+
+    <details>
+      <summary className='font-bold'>Install Tailwind CSS with Vite</summary>
+      <a href="https://tailwindcss.com/docs/guides/vite">Tailwind CSS with Vite Link.</a>
+    </details>
+
+  </>
     
   )
 }

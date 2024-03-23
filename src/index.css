@@ -17,3 +17,23 @@
           scrollbar-width: none;  /* Firefox */
     }
   }
+  
+  ol {
+    list-style-type: decimal;
+ 
+  }
+  
+  ul {
+    list-style-type: disc;
+
+  }
+  
+  /* Ensure lists have padding to show bullets */
+  ol, ul {
+    padding-left: 2rem;
+  }
+  
+  a {
+    color: #DC0190; /* Custom pink color, or you can use a Tailwind color like 'text-blue-500' in your JSX */
+    text-decoration: underline; /* Optional: if you want links to be underlined by default */
+  }

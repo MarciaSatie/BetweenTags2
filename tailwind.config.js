@@ -15,9 +15,6 @@ export default {
       header:['Madimi One','Roboto']
     }
   },
-  plugins: [
-    require('tailwind-scrollbar-hide'),
-
-  ],
+  plugins: [],
 }
 

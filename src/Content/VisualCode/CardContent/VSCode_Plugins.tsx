@@ -1,34 +1,24 @@
 
-import AEditor from './../Components/Editor/AEditor'
+import AEditor from '../../../Components/Editor/AEditor'
 
 
 //Replce XXX by file name.s
 
-const cardTitle ="XXX";
+const cardTitle ="VS Code main Plugins";
 const cardDate = createDate("2024-03-22");
 const cardContent = CardContent();
 
 function CardContent() {
   return (
     <>
-    <AEditor
-      code ={`Add code here`}
-    />
-
-    <details>
-      <summary>
-        <strong></strong>
-      </summary>
-      <p></p>
-    </details>
-
-    <ol >
-      <li></li>
-    </ol>
-
-    <ul >
-      <li></li>
-    </ul>
+      <h2 className='font-bold'>List of usefull plugins to install at VS Code.</h2>
+      <br></br>
+      <ul>
+        <li><a href='https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag'>Auto Rename Tag (HTML)</a> </li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier-Code Formater</a></li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server (Web Developement)</a></li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) Code Snippets</a></li>
+      </ul>
     </>
     
   )
