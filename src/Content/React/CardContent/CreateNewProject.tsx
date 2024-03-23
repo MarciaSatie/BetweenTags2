@@ -1,8 +1,6 @@
 
-import AEditor from './../../../Components/Editor/AEditor'
+//import AEditor from './../../../Components/Editor/AEditor'
 
-
-//Replce XXX by file name.
 
 const cardTitle ="npm create vite@latest";
 const cardDate = createDate("2024-03-22");
