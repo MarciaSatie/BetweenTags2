@@ -2,6 +2,7 @@ import Editor from "@monaco-editor/react";
 import {useRef, useState} from "react";
 import LanguageSelector from "./LanguageSel/LanguageSelector";
 import { CodeSnippets } from "./LanguageSel/LanguageOptions";
+import React from "react";
 
 
 function MEditor() {
@@ -10,7 +11,7 @@ function MEditor() {
 
   const [language,setLanguage] = useState("javascript") 
   
-  const [value,setValue] = useState(CodeSnippets["javascript"]);
+  const [value,setValue] = React.useState<string>(CodeSnippets["javascript"]);
 
   const onMount = (editor:any)=>{
     editorRef.current=editor;
@@ -29,20 +30,26 @@ function MEditor() {
 
     return (
       <>
-      <LanguageSelector 
+      <details>
+        <summary className="font-header text-lg bg-black pt-4 pl-4 pb-2 text-pink-300 font-bold ">
+        Editor
+        </summary>
+        <LanguageSelector 
         language ={language}
         onSelect ={onSelect}
         />
       {/* Monaco Editor */}
-        <Editor
-          height="100px"
+      <Editor
+          height="300px"
           theme="vs-dark"
           onMount={onMount}
           language={language}
           value={value}
-          onChange={
-            (value)=> setValue(value) 
-          }
+          onChange={(value) => {
+            if (typeof value === 'string') {
+              setValue(value);
+            }
+          }}
           options={{
             inlineSuggest: true,
             fontSize: "16px",
@@ -50,9 +57,13 @@ function MEditor() {
             autoClosingBrackets: true,
             minimap: { scale: 20}
           }}
+        />
+
+
+      </details>
+
 
         
-        />
       </>
 
     );

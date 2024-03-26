@@ -19,10 +19,7 @@ function App() {
     <>
     <Header/>
     
-    <MEditor
-
-`}
-    />
+    <MEditor/>
 
    <CardGroupSearch contentList ={listAll}/>
 
