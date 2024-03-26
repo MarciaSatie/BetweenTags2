@@ -3,6 +3,7 @@ import {useRef, useState} from "react";
 import LanguageSelector from "./LanguageSel/LanguageSelector";
 import { CodeSnippets } from "./LanguageSel/LanguageOptions";
 import React from "react";
+import Output from "./LanguageSel/Output"
 
 
 function MEditor() {
@@ -30,6 +31,14 @@ function MEditor() {
 
     return (
       <>
+      {/* *****Output***** */}
+      <Output
+        editorRef ={editorRef}
+        language={language}
+      />
+
+
+      {/* *****Editor***** */}
       <details>
         <summary className="font-header text-lg bg-black pt-4 pl-4 pb-2 text-pink-300 font-bold ">
         Editor
