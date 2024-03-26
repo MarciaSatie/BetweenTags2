@@ -20,9 +20,7 @@ function App() {
     <Header/>
     
     <MEditor
-      code ={`console.log("Welcome to <Between-Tags!/>");
-console.log("Where I create notes from specifics code languages.");
-console.log("Enjoy!");
+
 `}
     />
 
