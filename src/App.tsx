@@ -1,7 +1,9 @@
 import Header from "./Components/Header"
 import CardsGroup from "./Components/Cards/CardsGroup"
 import CardGroupSearch from "./Components/Cards/CardGroupSearch/CardsGroupSearch";
-import AEditor from './Components/Editor/AEditor'
+import MEditor from "./Components/Editor/MEditor";
+
+
 import contentCSharp from "./Content/CSharp/Content"
 import contentVSCode from "./Content/VisualCode/Content"
 import contentReact from "./Content/React/Content"
@@ -17,11 +19,11 @@ function App() {
     <>
     <Header/>
     
-    <AEditor
-      code ={`Welcome to <Between-Tags!/>
-
-Where I create notes from specifics code languages.
-Enjoy! `}
+    <MEditor
+      code ={`console.log("Welcome to <Between-Tags!/>");
+console.log("Where I create notes from specifics code languages.");
+console.log("Enjoy!");
+`}
     />
 
    <CardGroupSearch contentList ={listAll}/>

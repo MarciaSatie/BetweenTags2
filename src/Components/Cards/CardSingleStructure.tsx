@@ -13,7 +13,7 @@ const [isOpen,setIsOpen] = useState(false);
   <div className="relative">
       {/*Modal*/}
       <Modal isOpen={isOpen} onRequestClose ={()=> setIsOpen(false)}>
-      <div className="z-50" >
+      <div className="z-100" >
             {props.logo}
         
             <h2 className=' text-bt-p text-2xl font-header mt-4'>{props.title}</h2>
