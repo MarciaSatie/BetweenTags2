@@ -15,7 +15,7 @@ const Output: React.FC<OutputProps> = ({ editorRef, language }) => {
         if (!sourceCode) return;
 
         try {
-            const {run:result} = await ExecuteCode(language, sourceCode);
+            const result = await ExecuteCode(language, sourceCode);
             setOutput(JSON.stringify(result, null, 2));
             setError(null);
         } catch (error) {

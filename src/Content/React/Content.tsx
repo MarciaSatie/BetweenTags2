@@ -5,11 +5,13 @@ src="https://firebasestorage.googleapis.com/v0/b/between-tags.appspot.com/o/logo
 />
 
 import CreateNewProject from "./CardContent/CreateNewProject"
+import Firebase from "./CardContent/Firebase"
 
 const content: any =[];
 
 content.push(
-  CreateNewProject
+  CreateNewProject,
+  Firebase
   
 );
 
